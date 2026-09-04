@@ -1,0 +1,11 @@
+.bg-class {
+    background-color: rgb(129, 165, 137);
+}
+
+.pfp {
+  width: 120px;
+  height: auto;
+  display: block;
+  float: left;
+  margin: 0 16px 12px 0;   
+}
