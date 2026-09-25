@@ -13,11 +13,11 @@
 .navbar{
   text-align: center;
   font-size: 18px;
-  text-decoration: none;
 }
 
 .navbar a {
   color: rgb(4, 65, 23);
+  text-decoration: none;
 }
 
 .navbar a.selected {
