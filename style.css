@@ -9,3 +9,20 @@
   float: left;
   margin: 0 16px 12px 0;   
 }
+
+.navbar{
+  text-align: center;
+  font-size: 18px;
+}
+
+.navbar a {
+  color: rgb(4, 65, 23);
+}
+
+.navbar a.selected {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 50px;
+}
