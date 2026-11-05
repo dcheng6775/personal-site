@@ -1,34 +1,96 @@
+:root {
+  --bg: #f5f3ef;
+  --panel: #f9f7f4;
+  --text: #111111;
+  --muted: #3a3a3a;
+  --line: rgba(17, 17, 17, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Calibri, "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  padding: 64px 24px 48px;
+}
+
 .bg-class {
-    background-color: rgb(155, 193, 163);
+  background: var(--bg);
 }
 
-.pfp {
-  width: 150px;
-  height: auto;
-  display: block;
-  float: left;
-  margin: 0 16px 12px 0;   
+h1, h2, h3, p {
+  margin-top: 0;
 }
 
-.navbar{
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 0.85rem;
+  color: var(--muted);
+}
+
+a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.navbar {
   text-align: center;
   font-size: 18px;
+  margin-top: 40px;
 }
 
 .navbar a {
-  color: rgb(4, 65, 23);
+  color: var(--text);
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 
 .navbar a.selected {
-  font-weight: bold;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 48px;
 }
 
 .project-heading {
-  font-size: 15px;
-  margin-top: 45px;
+  font-size: 1.05rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding-top: 40px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
 }
